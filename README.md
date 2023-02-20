@@ -6,5 +6,5 @@ each folder also includes the specs of each project, as well as any additional i
 | project   | score | comments |
 | --------- | ----- | -------- |
 | project 1 |  100  |  ez pz   |
-| project 2 |  100  |  ez pz but i hardcoded first time oops   |
+| project 2 |  100  |  ez pz but i hardcoded first time oops |
 | project 3 |  still being graded  | fuck my life (THANK U BRYAN) |

@@ -1,0 +1,104 @@
+Ryan Lim, 005969674
+
+Part A
+The most significant obstacle that I overcame was that at first, I did not fully understand what hardcoding meant. When I finished my project for the first time, when calculating the tax I manually added up all of the tax rates and then multiplied that by the purchase amount, instead of using variables for each tax rate and assigning the correct tax rates for each variable on a state-by-state basis (which I have done once I rewrote my code). Thankfully, on the Piazza, I was able to find clarification on what hardcoding truly was, and upon realizing that I had hardcoded I was able to rewrite my project and eliminate the issue.
+Another obstacle that I overcame was utilizing the cin.clear and cin.ignore functions after receiving the user's input for the non-string variables (e.g. purchase amount, day, year). Without these functions, if the user were to input a non-numerical input then it would skip the rest of the inputs, potentially leading to the wrong error message being displayed depending on the order of the inputs. However, adding the cin.clear and cin.ignore functions to clear the "dirty data" from the buffer allows my program to run as normal, and for the right error message to be displayed.
+
+Part B
+Iowa
+50.00
+May
+26
+2004
+(checks if program leads to the corect output)
+
+Iowa
+50.00
+August
+5
+2004
+(checks if tax-free days are implemented correctly)
+
+california
+100.00
+May
+26
+2004
+(tests if noncapitalized state name would lead to an error)
+
+Cafiorlina
+100.00
+May
+26
+2004
+(tests if misspelled state name would lead to an error)
+
+West virginia
+100.00
+May
+26
+2004
+(tests if not capitalizing second word in state name would lead to an error)
+
+California
+0
+May
+26
+2004
+(checks if 0 for purchase amount would lead to an error)
+
+California
+-510251
+May
+26
+2004
+(checks if negative purchase amount would lead to an error)
+
+California
+940.00
+may
+26
+2004
+(checks if noncapitalized month would lead to an error)
+
+California
+95219
+Mayy
+26
+2004
+(checks if misspelled month would lead to an error)
+
+California
+2185
+May
+0
+2004
+(checks if day less than 1 would lead to an error)
+
+California
+21951
+May
+41041
+2004
+(checks if day greater than 31 would lead to an error)
+
+Alabama
+2360
+May
+26
+-252
+(checks if year less than 1 would lead to an error)
+
+Alabama
+2360
+May
+26
+150012
+(checks if year greater than 1 would lead to an error)
+
+missouri
+2195
+April
+25
+2100121
+(checks if error messages will be output in correct order [invalid state error message should be displayed in this case])

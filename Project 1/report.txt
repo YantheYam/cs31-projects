@@ -1,0 +1,22 @@
+Ryan Lim, 005969674
+
+Step 5
+Inputting 10, 25, then 15 leads to the Republican party candidate winning with 250.0% of the votes, and the Democratic party candidate only receiving 150.0% of the votes. This is nonsensical as the percentages added together are greater than 100.0%.
+Inputting -20, 30, then 20 leads to the Democratic party candidate winning with -100.0% of the votes, which I would consider incorrect and nonsensical as for one, a negative percentage doesn't make sense, and two, the Republican candidate should have won in this situation (30 > 20).
+Inputting 50, 25, then -25 leads to the Republican party candidate winning with 50.0% of the votes. However, this leads to the nonsensical output of -50.0% of the electors voting for the Democratic party candidate, as negative votes are not possible.
+Inputting 0, 30, then 20 leads to neither candidate winning as both candidates get "inf%" of the vote. This is incorrect as it makes the program divide by 0, producing a nonsensical output.
+
+Step 6
+For step 6, in the logic_error.cpp file the error I introduced was in line 18, where I replaced the multiplication operator (*) between 100.0 and republicanVotes with the division operator (/). The percentage of votes for the Republican candidate will always be very small because of the error, and the program compares the percentage of votes to determine which candidate wins, leading to the Democratic candidate winning in situations where the Republican candidate should have won.
+For example, when inputting 50, 45, then 5, the Republican candidate should win here as 45 > 5; however, the program outputs that the Democratic party candidate wins with 10.0% of the vote, while the Republican party candidate somehow receives 0.0% of the vote. This is indicative of a logic error.
+
+Step 7
+For step 7, in the compile_error.cpp file the first error I introduced was misspelling <iostream> as <uostream> in line 3. This leads to these error messages, as there is no uostream library (i.e. the compiler can't find it):
+1) #include errors detected. Please update your includePath. Squiggles are disabled for this translation unit [line 40, column 1]
+2) cannot open source file "uostream" [line 4, column 1]
+3) uostream: No such file or directory [line 4, column 10]
+
+The second error I introduced is by removing the semicolon in line 40, which leads to these error messages:
+1) expected ';' before '}' token [at line 40, column 14]
+2) expected a ';' [at line 41, column 1]
+The compiler recognizes that there is no semicolon at line 40 and hence cannot compile.

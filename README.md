@@ -8,3 +8,4 @@ each folder also includes the specs of each project, as well as any additional i
 | project 1 |  100  |  ez pz   |
 | project 2 |  100  |  ez pz but i hardcoded first time oops |
 | project 3 |  still being graded  | fuck my life (THANK U BRYAN) |
+| project 4 | still being graded | ez pz |

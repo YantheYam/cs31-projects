@@ -1,0 +1,28 @@
+Ryan Lim, 005969674
+a)
+The first three functions were pretty straightforward and did not take me much time to write, but I did encounter an obstacle with the locateMaximum function. I didn't understand that we just had to compare the strings to each other with the < and > operators, as initially I used the size() function applied to each string, and them compared that with the < and > operators.
+The last function (int shiftLeft) was definitely the most challenging for me. It took me quite a while to figure out the logic (e.g. whether to increment i or decrement i, what position to start the for loop at, etc.), but once I did it also became pretty straightforward.
+
+b)
+test strings:
+string bruh[8] = {"afkakw", "noohoo", "zdzoadoa", "Bruh", "25", "44.76", "00151.31", "24"}
+    locateMaximum(bruh, 8): tests that function identifies the largest element of the array which is at index 2
+    locateMaximum(bruh, -1): tests that function returns -1 if n <= 0
+    countFloatingPointValues(bruh, 8): test that function counts the total number of floating point values properly (returns 4)
+    countFloatingPointValues(bruh, -1): tests that function returns -1 if n <= 0   
+    countFloatingPointValues(bruh, 4): tests that function will only check first four elements if n = 4 (returns 0)
+    hasNoCapitals(bruh, 8): tests that function recognizes there is a capital letter at bruh[3] and returns false
+    hasNoCapitals(bruh, -1): tests that function returns true if n <= 0
+    hasNoCapitals(bruh, 3): tests that function will only check first three elements for capitals (returns true)
+    shiftLeft(bruh, 8, 2, "PLACEHOLDER"): tests that the function correctly shifts all elements left two positions and fills in the last two elements with the placeholder
+    shiftLeft(bruh, 5, 2, "PLACEHOLDER"): tests if function will only affect first five elements in the array (i.e. n)
+    shiftLeft(bruh, 8, 9, "PLACEHOLDER"): tests that function will still shift elements left if amount is greater than n (all elements should be replaced with the placeholder)
+    shiftLeft(bruh, -1, 5, "PLACEHOLDER"): tests that function handles an array properly if n <= 0;
+    shiftLeft(bruh, 8, -1, "PLACEHOLDER"): tests that function handles an array properly if amount < 0;
+
+string man[8] = {"zdzoadoa", "noohoo", "zdzoadoa", "+5120521", "-66", "44.76", "00151.31", "24..24"} 
+    locateMaximum(man, 8): tests that if there are multiple duplicate maximum values, the function will return the position of the first one (returns 0)
+    countFloatingPointValues(man, 8): tests that function will only count numbers that are in the correct format (e.g. leading zeroes are okay, but multiple decimals aren't as well as + or -)
+
+
+
